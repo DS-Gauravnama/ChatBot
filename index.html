@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Multi Function Chatbot</h1>
+            <nav>
+                <button class="bot-selector active" data-bot="grammar">
+                    <i class="fas fa-language"></i>
+                    Grammar & Translation
+                </button>
+                <button class="bot-selector" data-bot="dictionary">
+                    <i class="fas fa-book"></i>
+                    Dictionary & Thesaurus
+                </button>
+                <button class="bot-selector" data-bot="english">
+                    <i class="fas fa-graduation-cap"></i>
+                    English Learning
+                </button>
+                <button class="bot-selector" data-bot="javascript">
+                    <i class="fas fa-code"></i>
+                    JavaScript Assistant
+                </button>
+                <button class="bot-selector" data-bot="recipe">
+                    <i class="fas fa-utensils"></i>
+                    Recipe Planner
+                </button>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages"></div>
+                <div class="chat-input-container">
+                    <textarea id="userInput" placeholder="Type your message here..." rows="1"></textarea>
+                    <button id="sendButton">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html>
